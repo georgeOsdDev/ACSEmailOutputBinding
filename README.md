@@ -15,15 +15,17 @@ Setup connectionSting and senderAddress from your Communication Service resource
 "AzureWebJobsACSEmailSenderAddress": "<YourSenderAddress>",
 ```
 
-See also
+See also below offical document
+
 [Quickstart - Create and manage Email Communication Service resource in Azure Communication Service - An Azure Communication Services quickstart | Microsoft Learn](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/email/create-email-communication-resource)
 
 
-Use `ACSEmail` attribute.
-
 ## Sample Code
 
-#### .NET
+### .NET language worker
+
+Use `ACSEmail` attribute.
+
 
 ```
 [FunctionName("Function1")]
@@ -52,13 +54,15 @@ public static IActionResult Run(
     return (ActionResult) new OkObjectResult("OK");
 }
 ```
--[Basic example]()
--[Async example]()
--[Blob trigger example]()
+- [Basic example](https://github.com/georgeOsdDev/ACSEmailOutputBinding/blob/main/FunctionApp1/Function1.cs)
+- [Async example](https://github.com/georgeOsdDev/ACSEmailOutputBinding/blob/main/FunctionApp1/Function2.cs)
+- [Blob trigger example](https://github.com/georgeOsdDev/ACSEmailOutputBinding/blob/main/FunctionApp1/Function3.cs)
 
-#### JavaScript
+### Other language worker
 
-[Sample code]()
+Use `ACSEmail` type.
+
+[JavaScript example](https://github.com/georgeOsdDev/ACSEmailOutputBinding/blob/main/jsFunc/HttpTrigger/index.js)
 
 - function.json
 ```function.json
